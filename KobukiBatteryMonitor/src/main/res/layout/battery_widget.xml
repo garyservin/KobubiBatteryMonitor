@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical" android:paddingTop="9dp">
+
+    <TextView
+    android:id="@+id/kobuki_battery_info"
+    android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/kobuki_battery_info"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <include layout="@layout/kobuki_battery_appearance" />
+
+    <TextView
+        android:id="@+id/phone_battery_info"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_battery_info"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <include layout="@layout/battery_appearance" />
+
+</LinearLayout>
